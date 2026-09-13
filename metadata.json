@@ -1,0 +1,6 @@
+{
+  "name": "Aviator Roulette Crash",
+  "description": "Aviator crash game featuring an innovative dual-betting mechanic with Red and Black roulette color zones for strategic hedging.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
