@@ -1,1 +1,20 @@
 @import "tailwindcss";
+
+@keyframes floatReaction {
+  0% {
+    transform: translateY(0) scale(0.6);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(-90px) scale(1.2) rotate(-8deg);
+    opacity: 0.9;
+  }
+  100% {
+    transform: translateY(-180px) scale(1) rotate(10deg);
+    opacity: 0;
+  }
+}
+
+.animate-floating-reaction {
+  animation: floatReaction 2.2s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}

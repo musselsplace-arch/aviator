@@ -54,3 +54,34 @@ export interface LivePlayerBet {
   hedgeAmount: number | null;
   hedgeWon: boolean | null;
 }
+
+export interface ChatMessage {
+  id: string;
+  username: string;
+  avatar: string;
+  text: string;
+  time: string;
+  isSystem?: boolean;
+  isWin?: boolean;
+}
+
+export interface FloatingReaction {
+  id: string;
+  emoji: string;
+  x: number; // percentage 10% - 90%
+}
+
+export interface BigWinNotification {
+  id: string;
+  username: string;
+  avatar: string;
+  amount: number;
+  multiplier: number;
+  isUser?: boolean;
+}
+
+export interface FreeBetRainEvent {
+  id: string;
+  amount: number;
+  expiresAt: number;
+}
